@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import Image from "next/image";
+
 import { Socials } from "@/constants";
 
 const Header = () => {
@@ -9,19 +9,20 @@ const Header = () => {
         <div className="flex flex-row gap-3 items-center">
             <h1 className="text-white text-[25px] font-semibold">The Ascendancy <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#7614d2] via-orange-400 to-[#7614d2]">Paradox</span></h1>
         </div>
-        <div className='flex flex-row gap-5 mb-2'>
+
         <a href={'https://x.com/authorj_fowler?s=11'}>
+        <div className='flex flex-row gap-5 mb-2'>
           {Socials.map((social) => (
             <img
-            id={social.name}
+            key={social.name}
             src={social.src}
             alt={social.name}
             width={28}
             height={28}
             />
          ))}
-         </a>
-        </div>    
+        </div>
+        </a>    
     </div>
   )
 }

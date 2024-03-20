@@ -14,9 +14,9 @@ const Page: React.FC = () => {
           <h2 className='text-white text-center text-[55px] font-semibold mb-12'>
           Read Free <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#7614d2] via-orange-400 to-[#7614d2]"> Chapter </span>
           </h2>
+          <Link href='chap'>
           <div className='mx-auto flex items-center justify-center h-full'>
           {Lines.map((Lines) => (
-            <Link href='chap'>
             <Image
               key={Lines.name}
               src={Lines.src}
@@ -25,10 +25,9 @@ const Page: React.FC = () => {
               height={300}
               className='h-[60%] flex bg-cover bg-center rounded-xl border-white items-center justify-center'
             />
-            </Link>
           ))}
-
           </div>
+          </Link>
         </div>
       </div>
 

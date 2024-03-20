@@ -18,9 +18,9 @@ const page = () => {
             </a>
         </div>
 
+        <a href={'https://www.amazon.com/Saurian-Rangers-James-Fowler/dp/B093RLBMYT/ref=tmm_pap_swatch_0?_encoding=UTF8&qid=&sr='}>
         <div>
         {Knight.map((Knight) => (
-          <a href={'https://www.amazon.com/Saurian-Rangers-James-Fowler/dp/B093RLBMYT/ref=tmm_pap_swatch_0?_encoding=UTF8&qid=&sr='}>
           <Image
             key={Knight.name}
             src={Knight.src}
@@ -29,9 +29,9 @@ const page = () => {
             height={300}
             className='booka'
           />
-          </a>
         ))}
         </div>
+        </a>
     </div>
   )
 }
