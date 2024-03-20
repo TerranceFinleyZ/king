@@ -1,6 +1,6 @@
 'use client';
 import React from 'react'
-
+import Image from 'next/image';
 import { Books } from '@/constants'
 
 const Main = () => {
@@ -24,7 +24,7 @@ const Main = () => {
         <a href={'https://www.amazon.com/Ascendancy-Paradox-James-Fowler/dp/B0B8VJF774/ref=tmm_pap_swatch_0?_encoding=UTF8&qid=&sr='}>
         <div>
         {Books.map((Books) => (
-          <img
+          <Image
             key={Books.name}
             src={Books.src}
             alt={Books.name}

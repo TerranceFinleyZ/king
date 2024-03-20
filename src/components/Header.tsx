@@ -2,6 +2,7 @@
 import React from "react";
 
 import { Socials } from "@/constants";
+import Image from "next/image";
 
 const Header = () => {
   return (
@@ -13,7 +14,7 @@ const Header = () => {
         <a href={'https://x.com/authorj_fowler?s=11'}>
         <div className='flex flex-row gap-5 mb-2'>
           {Socials.map((social) => (
-            <img
+            <Image
             key={social.name}
             src={social.src}
             alt={social.name}
